@@ -13,7 +13,7 @@ function bill() {
     var btn1 = 5 / 100;
     var tip = btn1 * b;
 
-    testn = b - tip;
+    testn = b - -tip;
 
 
     var amount = document.getElementById("total").innerHTML = " $ " + testn;
@@ -40,7 +40,7 @@ function bill() {
   document.getElementById("btn2").addEventListener("click", function() {
     var btn2 = 10 / 100;
     var tip2 = btn2 * b;
-    testn = b - tip2;
+    testn = b - - tip2;
     var amount = document.getElementById("total").innerHTML = " $ " + testn;
 
     var number = testn;
@@ -60,7 +60,7 @@ function bill() {
     var btn3 = 15 / 100;
     var tip3 = btn3 * b;
 
-    testn = b - tip3;
+    testn = b - -tip3;
     var amount = document.getElementById("total").innerHTML = " $ " + testn;
     var number = testn;
     number = number.toLocaleString("en-US");
@@ -77,7 +77,7 @@ function bill() {
   document.getElementById("btn4").addEventListener("click", function() {
     var btn4 = 25 / 100;
     var tip4 = btn4 * b;
-    testn = b - tip4;
+    testn = b - -tip4;
     var amount = document.getElementById("total").innerHTML = " $ " + testn;
     var number = testn;
     number = number.toLocaleString("en-US");
@@ -94,7 +94,7 @@ function bill() {
   document.getElementById("btn5").addEventListener("click", function() {
     var btn5 = 50 / 100;
     var tip5 = btn5 * b;
-    testn = b - tip5;
+    testn = b - - tip5;
     var amount = document.getElementById("total").innerHTML = " $ " + testn;
     var number = testn;
     number = number.toLocaleString("en-US");
@@ -123,8 +123,8 @@ function bill() {
     var final = nu.value = nu.value;
     var sns = final / 100;
     var tip6 = sns * b;
-    tes = b - tip6;
-    
+    tes = b - - tip6;
+
    document.getElementById("amount-tip").innerHTML = " $ " + tes ;
    var number = tes;
    number = number.toLocaleString("en-US");
@@ -214,8 +214,8 @@ function bill() {
 //
 //
 //
-// var reload = document.getElementById("reload");
-// function reset(){
-// reload= location.reload();
-//
-// }
+var reload = document.getElementById("reload");
+function reset(){
+reload= location.reload();
+
+}
